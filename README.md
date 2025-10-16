@@ -1,8 +1,4 @@
 # Stock-market-prediction
-# Create the README content as a multi-line string using Markdown syntax
-readme_content = """
-# 📈 Stock Market Trend Prediction (5-Candle Lookahead)
-
 This project implements a deep learning solution using a **Stacked Long Short-Term Memory (LSTM) network** to predict the short-term trend of stock market data. The model classifies the expected movement of the next five candles (data points) into three categories: **Uptrend**, **Downtrend**, or **Neutral**.
 
 ## 🎯 Project Goal and Trend Definition
