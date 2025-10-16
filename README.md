@@ -50,3 +50,10 @@ pip install pandas numpy scikit-learn tensorflow matplotlib
 * **Metrics:** Model performance is assessed using Accuracy, Categorical Crossentropy Loss, a Classification Report (showing Precision, Recall, F1-Score per class), and a Confusion Matrix.
 
 * **Model Persistence:** The final trained model is saved as a HDF5 file (stock_trend_lstm_model.h5) for easy deployment. """
+
+### 📝 Assumptions and Implementation Notes
+* **Prediction vs. Historical Labeling:** The model is trained to predict the trend of the next 5 candles using only features available before that 5-candle window begins, thus strictly avoiding look-ahead bias.
+
+* **Handling Incomplete Windows:** The final 5 rows of the dataset, which do not have a full 5-candle lookahead window, are removed from the analysis to ensure data integrity.
+
+* **Class Imbalance:** The code addresses potential class imbalance (where 'Neutral' trends are expected to be more frequent) by implementing class_weight='balanced' in the model.fit() function. This is critical for improving the model's ability to correctly classify the minority 'Uptrend' and 'Downtrend' events.
