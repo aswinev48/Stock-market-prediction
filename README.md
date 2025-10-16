@@ -36,6 +36,8 @@ The target labels are defined based on the requirement of the Roadlyft screening
 ## ⚙️ Dependencies and Setup
 
 This project requires the following libraries. All can be installed via `pip`:
+```bash
+pip install pandas numpy scikit-learn tensorflow matplotlib
 
 ```bash
 pip install pandas numpy scikit-learn tensorflow matplotlib
