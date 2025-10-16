@@ -38,6 +38,15 @@ The target labels are defined based on the requirement of the Roadlyft screening
 This project requires the following libraries. All can be installed via `pip`:
 ```bash
 pip install pandas numpy scikit-learn tensorflow matplotlib
+```
+### Execution Steps (Colab/Jupyter Notebook)
+* **Upload Data:** Upload the provided large_32.csv file.
 
-```bash
-pip install pandas numpy scikit-learn tensorflow matplotlib
+* **Environment Setup:** Run the imports cell to load all necessary libraries.
+
+* **Run Code:** Execute all cells in the notebook (Stockmarket_Trend_Prediction (1).ipynb) sequentially, from Data Loading to Model Evaluation.
+
+### 📝 Evaluation and Results
+* **Metrics:** Model performance is assessed using Accuracy, Categorical Crossentropy Loss, a Classification Report (showing Precision, Recall, F1-Score per class), and a Confusion Matrix.
+
+* **Model Persistence:** The final trained model is saved as a HDF5 file (stock_trend_lstm_model.h5) for easy deployment. """
